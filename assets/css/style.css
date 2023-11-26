@@ -351,6 +351,62 @@ main .cta-business button {
     border: 0;
 }
 
-.faq {
+main .faq {
     display: flex;
+    flex-direction: column;
+}
+
+main .faq h2 {
+    margin-bottom: 60px;
+}
+
+main .faq .question {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-block: 40px;
+    padding-right: 40px;
+    border-bottom: 1px solid black;
+}
+
+main .faq .question:nth-child(2) {
+    border-top: 1px solid black;
+}
+
+.icon.chevron-down::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f078";
+}
+
+body>footer {
+    background-color: black;
+    color: white;
+    padding-bottom: 50px;
+}
+
+body>footer a {
+    color: white;
+    font-size: 14px;
+}
+
+body>footer .cta-links {
+    padding-block: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+body>footer .cta-links .cta-column h3 {
+    margin-bottom: 20px;
+}
+
+body>footer .cta-links .cta-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body>footer .content hr {
+    margin-bottom: 40px;
+    width: 150px;
 }
