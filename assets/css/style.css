@@ -3,3 +3,99 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    background-color: white;
+}
+
+nav>div:first-child {
+    display: flex;
+    gap: 40px;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+nav div:nth-child(2) ul li:last-child a,
+header>div ul li:nth-child(3) a {
+    color: white;
+    background-color: #0061FF;
+    padding: 5px 15px;
+}
+
+header {
+    background-color: #B4D0E7;
+
+}
+
+header>div {
+    width: 65%;
+    margin: 70px auto;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+header>div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+header>div ul li h1 {
+    font-size: 50px;
+}
+
+header>div ul li p {
+    width: 350px;
+}
+
+.icon.arrow-down::before {
+    font-family: "Font Awesome 5 Free";
+    font-size: 40px;
+    font-weight: 900;
+    content: "\f063";
+}
+
+header>div figure {
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+    width: 70%;
+    height: 445px;
+}
