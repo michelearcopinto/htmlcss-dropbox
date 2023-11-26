@@ -37,7 +37,7 @@ a:hover {
 }
 
 .section {
-    margin-block: 30px 125px;
+    margin-bottom: 125px;
 }
 
 nav {
@@ -251,19 +251,106 @@ main .partner-infos h2 {
     margin-bottom: 50px;
 }
 
-footer .partners {
+main .partners {
     display: flex;
 }
 
-footer .partners .big-square {
+main .partners .big-square {
     flex-basis: calc(100% / 3);
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid blue;
 }
 
-footer .partners .big-square .small-square {
-    flex-basis: 50%;
+main .partners .big-square .small-square {
+    width: 50%;
+    height: 50%;
     padding: 70px;
-    border: 1px solid red;
+    display: flex;
+    align-items: center;
+}
+
+.small-square#designit {
+    background-color: #D3EACF;
+    padding: 10px;
+}
+
+.small-square#designit>div {
+    height: 100%;
+    padding: 60px;
+    background-color: #A2D39B;
+    display: flex;
+    align-items: center;
+}
+
+.small-square#designit figure {
+    background-color: #A2D39B;
+}
+
+.small-square#asu {
+    background-color: #61082B;
+}
+
+.small-square#uf {
+    background-color: #0093CE;
+}
+
+.small-square#topps {
+    background-color: #FF1C1C;
+}
+
+.small-square#wbr {
+    background-color: #D5001F;
+}
+
+.small-square#hc {
+    background-color: #B4D0E7;
+}
+
+.small-square#lp {
+    background-color: #0D2481;
+}
+
+.small-square#cc {
+    background-color: #FFD830;
+}
+
+.white-logo {
+    filter: invert(100%) sepia(3%) saturate(2972%) hue-rotate(235deg) brightness(126%) contrast(100%);
+}
+
+main .partners .big-square:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #F5F5F5;
+    padding: 40px;
+}
+
+main .partners .big-square:nth-child(2) figure {
+    width: 50%;
+}
+
+main .partners .big-square:nth-child(2) hr {
+    width: 100px;
+}
+
+main .cta-business-container {
+    background-color: #B4D0E7;
+}
+
+main .cta-business {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 50px
+}
+
+main .cta-business button {
+    height: fit-content;
+    padding: 5px 25px;
+    border: 0;
+}
+
+.faq {
+    display: flex;
 }
