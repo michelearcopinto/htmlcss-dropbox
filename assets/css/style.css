@@ -179,7 +179,7 @@ main .bottom-element {
     min-width: 1031px;
     border: 1px solid black;
     padding-bottom: 25px;
-    margin-bottom: 500px;
+    margin-bottom: 150px;
 }
 
 .bottom-element>* {
@@ -206,4 +206,26 @@ main .bottom-element div:nth-child(3) ul {
 
 main .bottom-element div:nth-child(3) ul li:nth-child(2) {
     margin-right: 260px;
+}
+
+main .partner-box {
+    display: flex;
+    gap: 50px;
+}
+
+main .partner-box figure {
+    flex-basis: 65%;
+}
+
+main .partner-box>div {
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+main .partner-box>div span a {
+    border: 1px solid black;
+    padding: 10px 20px;
 }
