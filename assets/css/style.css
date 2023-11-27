@@ -79,6 +79,10 @@ nav ul li:hover {
     border-bottom: 2px solid black;
 }
 
+nav div:nth-child(2) ul li:last-child:hover {
+    border-bottom: none;
+}
+
 nav>div:first-child figure {
     margin: auto;
 }
@@ -105,13 +109,21 @@ header {
 }
 
 header>div {
-    width: 65%;
+    width: 63%;
     margin: 0 auto;
     padding-block: 125px 15px;
 }
 
-header>div h1 {
-    font-size: 50px;
+h1 {
+    font-size: 65px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 25px;
 }
 
 header>div div {
@@ -173,28 +185,100 @@ main .column {
     flex-direction: column;
     gap: 30px;
     padding-bottom: 60px;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.226);
     width: calc(100% / 3);
 }
 
 main .column div:first-child,
 .bottom-element div:first-child {
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+    padding-block: 5px;
+}
+
+main .column .icon.single::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+    margin-right: 5px;
+}
+
+main .column .icon.team::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f500";
+    margin-right: 5px;
+}
+
+.icon.enterprise::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f1ad";
+    margin-right: 5px;
+}
+
+main .column #first.row ul li:nth-child(2) {
+    font-weight: 600;
+}
+
+main .column #first.row ul li:nth-child(3) {
+    color: gray;
 }
 
 main .column>* {
     padding-inline: 25px;
 }
 
-main .column div:first-child {
-    padding-block: 5px;
+main .column #second.row ul li,
+main .column #fourth.row ul li {
+    padding-left: var(--icon-space);
+}
+
+main .column #second.row ul,
+main .column #fourth.row ul {
+    --icon-space: 1.3em;
+    list-style: none;
+    padding: 0;
+}
+
+main .column #second.row ul li::before,
+main .column #fourth.row ul li::before {
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: calc(var(--icon-space) * -1);
+    width: var(--icon-space);
+}
+
+main #first-single.column #second.row ul li:first-child:before {
+    content: "\f007";
+}
+
+main .column #second.row ul li:nth-child(2)::before {
+    content: "\f07b";
+}
+
+main .column #second.row ul li:last-child::before {
+    content: "\f1e0";
+}
+
+main #second-team.column #second.row ul li:first-child:before {
+    content: "\f0c0";
+}
+
+main #third-enterprise.column #second.row ul li:first-child:before {
+    content: "\e533";
+}
+
+main .column #fourth.row ul li::before {
+    content: "\f00c";
+    color: #005fff;
 }
 
 main .column hr {
     padding: 0;
     margin-left: 20px;
     width: 50px;
+    opacity: 0.5;
 }
 
 #first.row ul {
@@ -215,18 +299,24 @@ main .column hr {
     gap: 30px;
 }
 
+#third.row ul li:nth-child(2) a,
+main .partner-infos a {
+    color: blue;
+    text-decoration: underline;
+}
+
+#fourth h4 {
+    margin-bottom: 20px;
+}
+
 main .bottom-element {
     min-width: 1031px;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.226);
     padding-bottom: 25px;
 }
 
 .bottom-element>* {
     padding-inline: 25px;
-}
-
-main .bottom-element div:first-child {
-    padding-block: 5px;
 }
 
 main .bottom-element div:nth-child(2) {
@@ -260,7 +350,7 @@ main .partner-box>div {
     flex-basis: 35%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     padding-top: 40px;
 }
 
@@ -277,13 +367,13 @@ main .partner-box>div span a:hover {
 main .feature-box .features-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
     row-gap: 50px;
     padding-top: 50px;
 }
 
 main .feature-box .features-grid .feature {
-    width: calc(100% / 3 - (30px / 3 * 2));
+    width: calc(100% / 3 - (50px / 3 * 2));
 }
 
 main .feature-box .features-grid .feature h3 {
@@ -367,6 +457,7 @@ main .partners .big-square:nth-child(2) {
     gap: 50px;
     background-color: #F5F5F5;
     padding: 40px;
+    overflow: auto;
 }
 
 main .partners .big-square:nth-child(2) figure {
@@ -375,6 +466,7 @@ main .partners .big-square:nth-child(2) figure {
 
 main .partners .big-square:nth-child(2) hr {
     width: 100px;
+    opacity: 0.5;
 }
 
 main .cta-business-container {
@@ -388,10 +480,21 @@ main .cta-business {
     padding-block: 50px
 }
 
+main .cta-business h2 {
+    color: #61082B;
+}
+
 main .cta-business button {
+    font-weight: bold;
     height: fit-content;
-    padding: 5px 25px;
+    padding: 10px 35px;
     border: 0;
+}
+
+main .cta-business button:hover {
+    cursor: pointer;
+    color: #005fff;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.4);
 }
 
 main .faq {
@@ -467,7 +570,8 @@ body>footer .cta-links {
     justify-content: space-between;
 }
 
-body>footer .cta-links .cta-column h3 {
+body>footer .cta-links .cta-column h4 {
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
