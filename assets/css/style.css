@@ -175,8 +175,6 @@ main div:first-child .radio-button {
     margin: 50px 20px 50px 0;
 }
 
-main div:first-child .radio-button::before {}
-
 main .table-cotainer {
     display: flex;
     flex-direction: column;
