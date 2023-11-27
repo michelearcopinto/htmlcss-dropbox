@@ -45,6 +45,11 @@ nav {
     justify-content: space-between;
     padding: 30px 20px;
     background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 nav>div:first-child {
@@ -75,8 +80,8 @@ header {
 
 header>div {
     width: 65%;
-    margin: 70px auto 0;
-    padding-bottom: 15px;
+    margin: 0 auto;
+    padding-block: 125px 15px;
     position: relative;
 }
 
