@@ -285,7 +285,7 @@ main .column #fourth.row ul li::before {
 main .column hr {
     padding: 0;
     margin-left: 20px;
-    width: 50px;
+    width: 20%;
     opacity: 0.5;
 }
 
@@ -479,8 +479,13 @@ main .partners .big-square:nth-child(2) figure {
 }
 
 main .partners .big-square:nth-child(2) hr {
-    width: 100px;
+    width: 20%;
     opacity: 0.5;
+}
+
+main .partners .big-square:nth-child(2) blockquote,
+main .partners .big-square:nth-child(2) blockquote+footer {
+    color: grey;
 }
 
 main .cta-business-container {
@@ -597,7 +602,7 @@ body>footer .cta-links .cta-column ul {
 
 body>footer .content hr {
     margin-bottom: 40px;
-    width: 150px;
+    width: 20%;
 }
 
 body>footer .content span {
