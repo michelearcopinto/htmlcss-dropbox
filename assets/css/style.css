@@ -171,12 +171,12 @@ header>div div figure img {
     margin-inline: auto
 }
 
-main div:first-child .radio-button {
+main article:first-child .radio-button {
     display: inline-block;
     margin: 50px 20px 50px 0;
 }
 
-main div:first-child input {
+main article:first-child input {
     vertical-align: middle;
 }
 
