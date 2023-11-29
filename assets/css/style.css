@@ -6,6 +6,7 @@
 
 html {
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .icon::before {
@@ -175,6 +176,10 @@ main div:first-child .radio-button {
     margin: 50px 20px 50px 0;
 }
 
+main div:first-child input {
+    vertical-align: middle;
+}
+
 main .table-cotainer {
     display: flex;
     flex-direction: column;
@@ -225,11 +230,11 @@ main .column .icon.team::before {
     margin-right: 5px;
 }
 
-main .column #first.row ul li:nth-child(2) {
+main .column .first.row ul li:nth-child(2) {
     font-weight: 600;
 }
 
-main .column #first.row ul li:nth-child(3) {
+main .column .first.row ul li:nth-child(3) {
     color: gray;
 }
 
@@ -237,47 +242,47 @@ main .column>* {
     padding-inline: 25px;
 }
 
-main .column #second.row ul li,
-main .column #fourth.row ul li {
+main .column .second.row ul li,
+main .column .fourth.row ul li {
     padding-left: var(--icon-space);
 }
 
-main .column #second.row ul,
-main .column #fourth.row ul {
+main .column .second.row ul,
+main .column .fourth.row ul {
     --icon-space: 1.3em;
     list-style: none;
     padding: 0;
 }
 
-main .column #second.row ul li::before,
-main .column #fourth.row ul li::before {
+main .column .second.row ul li::before,
+main .column .fourth.row ul li::before {
     font-family: FontAwesome;
     display: inline-block;
     margin-left: calc(var(--icon-space) * -1);
     width: var(--icon-space);
 }
 
-main #first-single.column #second.row ul li:first-child:before {
+main .first-single.column .second.row ul li:first-child:before {
     content: "\f007";
 }
 
-main .column #second.row ul li:nth-child(2)::before {
+main .column .second.row ul li:nth-child(2)::before {
     content: "\f07b";
 }
 
-main .column #second.row ul li:last-child::before {
+main .column .second.row ul li:last-child::before {
     content: "\f1e0";
 }
 
-main #second-team.column #second.row ul li:first-child:before {
+main .second-team.column .second.row ul li:first-child:before {
     content: "\f0c0";
 }
 
-main #third-enterprise.column #second.row ul li:first-child:before {
+main .third-enterprise.column .second.row ul li:first-child:before {
     content: "\e533";
 }
 
-main .column #fourth.row ul li::before {
+main .column .fourth.row ul li::before {
     content: "\f00c";
     color: #005fff;
 }
@@ -289,7 +294,7 @@ main .column hr {
     opacity: 0.5;
 }
 
-#first.row ul {
+.first.row ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -301,19 +306,19 @@ main .column hr {
     gap: 15px;
 }
 
-#third.row ul {
+.third.row ul {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-#third.row ul li:nth-child(2) a,
+.third.row ul li:nth-child(2) a,
 main .partner-infos a {
     color: blue;
     text-decoration: underline;
 }
 
-#fourth h4 {
+.fourth h4 {
     margin-bottom: 20px;
 }
 
@@ -398,7 +403,7 @@ main .partners {
 
 main .partners .big-square {
     flex-basis: calc(100% / 3);
-    aspect-ratio: 1/1;
+    height: calc(100vw / 3);
 }
 
 main .partners .big-square:nth-child(odd) {
@@ -408,7 +413,7 @@ main .partners .big-square:nth-child(odd) {
 
 main .partners .big-square .small-square {
     width: 50%;
-    aspect-ratio: 1/1;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
